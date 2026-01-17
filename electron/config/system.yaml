@@ -1,0 +1,10 @@
+branding:
+  logo: assets/logo.ico
+  colors:
+    primary: "#1E40AF"
+    secondary: "#FBBF24"
+company:
+  name: SYNTHEDU Government Edition
+  department: Ministry of Education
+mode:
+  offline_only: true
