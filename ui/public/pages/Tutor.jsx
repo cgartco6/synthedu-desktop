@@ -16,6 +16,12 @@ export default function Tutor() {
               <p className="text-gray-300 text-sm mb-2">
                 Adaptive, voice-capable AI tutor with personalized learning paths.
               </p>
+              <button
+  onClick={() => window.electronAPI.generateAvatar("Welcome to SYNTHEDU")}
+  className="bg-blue-600 p-3 rounded mt-4"
+>
+  Generate AI Tutor Avatar
+</button>
               <button className="bg-green-600 hover:bg-green-700 px-3 py-1 rounded text-sm">
                 Start Session
               </button>
