@@ -1,6 +1,15 @@
 const { app, BrowserWindow } = require("electron");
 const path = require("path");
 const { spawn } = require("child_process");
+const { ipcMain } = require("electron");
+const { spawn } = require("child_process");
+
+ipcMain.handle("generate-avatar", async (_, text) => {
+  return new Promise((resolve) => {
+    const py = spawn("python", ["ai_agents/avatar_pipeline.py", text]);
+    py.on("close", () => resolve("assets/avatar_output.mp4"));
+  });
+});
 
 let pyServer;
 
