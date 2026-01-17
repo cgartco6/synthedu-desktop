@@ -4,6 +4,15 @@ import json
 import random
 from datetime import datetime
 from local_llm import run_local_llm
+from voice_tutor import VoiceTutor
+
+voice = VoiceTutor()
+
+def generate_llm_activity():
+    prompt = random.choice(PROMPTS)
+    response = run_local_llm(prompt)
+    voice.speak(response[:120])
+    return response[:200]
 
 AGENTS = ["CourseFactory", "Tutor", "VideoStudio", "Exam", "Certification"]
 
