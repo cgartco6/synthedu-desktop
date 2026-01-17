@@ -1,0 +1,8 @@
+theme:
+  primary: "#1A2A1F"
+  accent: "#C2A14D"
+branding:
+  logo: "military_seal.png"
+terminology:
+  course: "Doctrine Module"
+  exam: "Readiness Assessment"
