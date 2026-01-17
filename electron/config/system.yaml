@@ -1,0 +1,14 @@
+branding:
+  name: National AI Learning Platform
+  logo: assets/gov_logo.ico
+  primaryColor: "#003366"
+  secondaryColor: "#FFD700"
+
+deployment:
+  offline_only: true
+  telemetry: disabled
+  cloud_access: false
+
+certification:
+  authority: Department of Education
+  digital_signature: enabled
