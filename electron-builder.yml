@@ -1,0 +1,15 @@
+appId: com.synthedu.platform
+productName: SYNTHEDU
+copyright: © SYNTHEDU
+
+win:
+  icon: assets/logo.ico
+  target: nsis
+
+nsis:
+  oneClick: true
+  perMachine: true
+  allowElevation: true
+  installerIcon: assets/logo.ico
+  uninstallerIcon: assets/logo.ico
+  artifactName: SYNTHEDU-Setup.exe
